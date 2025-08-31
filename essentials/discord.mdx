@@ -1,7 +1,7 @@
 ---
-title: 'Discord'
-description: 'Search examples and field explanations for Discord in SearchHub'
-icon: 'discord'
+title: "Discord"
+description: "Search examples and field explanations for Discord in SearchHub"
+icon: "discord"
 ---
 
 # <Icon icon="discord" iconType="solid" size={32} /> Discord — Quick search examples
@@ -10,8 +10,11 @@ This page shows compact, copy-pasteable examples of common Discord search fields
 
 ---
 
-<Tip title="User view" icon="user">
-Enter a Discord user ID (numeric) in for the UserView to quickly load that user's profile and messages, voice logs, prevnames, avatars, files, join/leave/ban. Example: <code>1098175931635482634</code>.
+<Tip>
+  Enter a Discord user ID (numeric) in for the UserView to quickly load that user's profile and messages, voice logs, prevnames, avatars, files, join/leave/ban. Example: <code>
+  1098175931635482634</code>
+
+  .
 </Tip>
 
 ![title](/images/preview.webp)
@@ -31,10 +34,11 @@ content:someone play roblox?
 ```
 
 <Note>
-Notes:
-- Guild(name) accepts partial or full server names or numeric channel ID.
-- Channel(name) can be a channel name or numeric channel ID.
-- Content can be text with spaces or not.
+  Notes:
+
+  - Guild(name) accepts partial or full server names or numeric channel ID.
+  - Channel(name) can be a channel name or numeric channel ID.
+  - Content can be text with spaces or not.
 </Note>
 
 ---
@@ -52,10 +56,11 @@ author:1098175931635482634
 ```
 
 <Note>
-Notes:
-- Username matches the account handle (case-insensitive).
-- Displayname matches the server nickname.
-- Use Author:user_id to find messages from a specific user.
+  Notes:
+
+  - Username matches the account handle (case-insensitive).
+  - Displayname matches the server nickname.
+  - Use Author:user_id to find messages from a specific user.
 </Note>
 
 ---
@@ -75,9 +80,10 @@ has:sound
 ```
 
 <Note>
-Notes:
-- Use Has:video, Has:image, Has:sound, Has:link to filter by media type.
-- Use mention to check where a user got pinged.
+  Notes:
+
+  - Use Has:video, Has:image, Has:sound, Has:link to filter by media type.
+  - Use mention to check where a user got pinged.
 </Note>
 
 ---
@@ -88,15 +94,17 @@ Filter messages by exact date or ranges.
 
 ```text
 Global Send Time
+
 date:2025-05-25 00:00
 before:2025-05-25 00:00
 after:2025-05-25 00:00
 ```
 
 <Note>
-Notes:
-- Date uses YYYY-MM-DD HH:MM.
-- Before/After apply exclusive range filters.
+  Notes:
+
+  - Date uses YYYY-MM-DD HH:MM.
+  - Before/After apply exclusive range filters.
 </Note>
 
 ---
@@ -110,8 +118,9 @@ Below are ready-to-paste examples that combine fields for realistic investigativ
 ```text
 GuildName:SearchHub Author:1098175931635482634 Has:image Before:2025-06-01
 ```
+
 <Note>
-Returns image attachments posted by the specified author in the SearchHub server before 2025-06-01.
+  Returns image attachments posted by the specified author in the SearchHub server before 2025-06-01.
 </Note>
 
 #### 2) Videos in a specific channel during May 2025
@@ -119,8 +128,9 @@ Returns image attachments posted by the specified author in the SearchHub server
 ```text
 Guild:1297902764881477643 Channel:1409239333432459354 Has:video After:2025-05-01 Before:2025-06-01
 ```
+
 <Note>
-Finds video attachments posted in the given channel between 2025-05-01 and 2025-06-01.
+  Finds video attachments posted in the given channel between 2025-05-01 and 2025-06-01.
 </Note>
 
 #### 3) Messages mentioning a license-like token and containing links
@@ -128,8 +138,9 @@ Finds video attachments posted in the given channel between 2025-05-01 and 2025-
 ```text
 content:license Has:link
 ```
+
 <Note>
-Good for surface-level scans for shared tokens/keys accompanied by links. Combine with a guild or author to reduce noise.
+  Good for surface-level scans for shared tokens/keys accompanied by links. Combine with a guild or author to reduce noise.
 </Note>
 
 #### 4) Cross-server username search with optional timeframe
@@ -137,22 +148,24 @@ Good for surface-level scans for shared tokens/keys accompanied by links. Combin
 ```text
 Username:testt After:2025-01-01 Before:2025-07-01
 ```
+
 <Note>
-Searches for the account handle 'testt' across indexed servers within the given date range.
+  Searches for the account handle 'testt' across indexed servers within the given date range.
 </Note>
 
-#### 5) High-precision: server + author + attachment type + keyword
+#### 5) High-precision: server \+ author \+ attachment type \+ keyword
 
 ```text
 GuildName:SearchHub Author:1098175931635482634 Has:image content:screenshot
 ```
+
 <Note>
-Returns messages from the author in the SearchHub guild containing images and the word "screenshot" — useful for visual evidence collection.
+  Returns messages from the author in the SearchHub guild containing images and the word "screenshot" — useful for visual evidence collection.
 </Note>
 
-<Check title="Pro tip" icon="bulb">
-- Combine ID fields (Guild, Channel, Author) for deterministic results.  
-- Use `Has:<type>` to quickly filter attachments.  
-- Dates use YYYY-MM-DD (add HH:MM if you need exact time).  
-- Paste examples directly in the dashboard search box to iterate quickly.
+<Check>
+  - Combine ID fields (Guild, Channel, Author) for deterministic results.
+  - Use `Has:<type>` to quickly filter attachments.
+  - Dates use YYYY-MM-DD (add HH:MM if you need exact time).
+  - Paste examples directly in the dashboard search box to iterate quickly.
 </Check>

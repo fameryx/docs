@@ -6,8 +6,8 @@ icon: "database"
 
 # <Icon icon="database" iconType="solid" size={32} /> CSINT — Email & Breach Search
 
-<Tip title="What this page covers" icon="sparkles">
-Quick examples and notes for searching emails, IPs, phone numbers, Minecraft UIDs and Discord IDs in SearchHub. Includes a short Snusbase overview and legal guidance.
+<Tip>
+  Quick examples and notes for searching emails, IPs, phone numbers, Minecraft UIDs and Discord IDs in SearchHub. Includes a short Snusbase overview and legal guidance.
 </Tip>
 
 ---
@@ -23,8 +23,8 @@ test@gmail.com
 ```
 
 <Note>
-- Returns linked profiles, indexed mentions and breach dataset hits (when available).  
-- Use full email for best precision; partials may return noisy results.
+  - Returns linked profiles, indexed mentions and breach dataset hits (when available).
+  - Use full email for best precision; partials may return noisy results.
 </Note>
 
 ---
@@ -40,7 +40,7 @@ Lookup an IP to surface observed connections, hosting info and related records.
 ```
 
 <Note>
-- IP results can include session logs, reports and associated identifiers (when indexed).  
+  - IP results can include session logs, reports and associated identifiers (when indexed).
 </Note>
 
 ---
@@ -56,7 +56,7 @@ Search by phone number. Prefer international (normalized) formats for consistenc
 ```
 
 <Note>
-- Normalize local numbers (country code) for best matches.  
+  - Normalize local numbers (country code) for best matches.
 </Note>
 
 ---
@@ -72,7 +72,7 @@ Lookup Minecraft UIDs / UUIDs to find linked activity or associated identifiers.
 ```
 
 <Note>
-- Use the full UUID when possible. Partial matches may return unrelated results.
+  - Use the full UUID when possible. Partial matches may return unrelated results.
 </Note>
 
 ---
@@ -88,16 +88,17 @@ Search by Discord numeric ID.
 ```
 
 <Note>
-- Discord IDs are deterministic.
+  - Discord IDs are deterministic.
 </Note>
 
 ---
 
-# <Icon icon="sparkles" iconType="solid" size={24} /> Snusbase (breach datasets)
+# <Icon icon="sparkles" iconType="solid" size={32} /> Snusbase (breach datasets)
 
 Snusbase is a breach/leak aggregator. Use the appropriate type to focus breach searches.
 
-### <Icon icon="envelope" iconType="solid" size={20} /> email
+### <Icon icon="envelope" iconType="solid" size={24} /> Email
+
 Search leaked email addresses.
 
 #### Example:
@@ -107,12 +108,13 @@ test@gmail.com
 ```
 
 <Note>
-- Returns leaked entries where the email appears.
+  - Returns leaked entries where the email appears.
 </Note>
 
 ---
 
 ### <Icon icon="user" iconType="solid" size={24} /> Username
+
 Search account handles / usernames found in leaks.
 
 #### Example:
@@ -122,12 +124,13 @@ te5t_user
 ```
 
 <Note>
-- Useful to find usernames reused across breaches.
+  - Useful to find usernames reused across breaches.
 </Note>
 
 ---
 
 ### <Icon icon="server" iconType="solid" size={24} /> IP
+
 Search last-observed IPs associated with leaked records.
 
 #### Example:
@@ -137,12 +140,13 @@ Search last-observed IPs associated with leaked records.
 ```
 
 <Note>
-- IP hits show where a record listed an IP address (connections, logs, etc.).
+  - IP hits show where a record listed an IP address (connections, logs, etc.).
 </Note>
 
 ---
 
 ### <Icon icon="lock" iconType="solid" size={24} /> Password
+
 Search plaintext passwords found in leaks (do not store or share).
 
 #### Example:
@@ -152,12 +156,13 @@ T3st123!
 ```
 
 <Note>
-- Handle plaintext password hits with strict controls and do not redistribute.
+  - Handle plaintext password hits with strict controls and do not redistribute.
 </Note>
 
 ---
 
-### <Icon icon="hash" iconType="solid" size={24} /> Hash
+### <Icon icon="lock-hashtag" iconType="solid" size={24} /> Hash
+
 Search hashed credentials or password hashes.
 
 #### Example:
@@ -167,12 +172,13 @@ Search hashed credentials or password hashes.
 ```
 
 <Note>
-- Hash hits may require additional cracking/context to map back to plaintext.
+  - Hash hits may require additional cracking/context to map back to plaintext.
 </Note>
 
 ---
 
 ### <Icon icon="id-badge" iconType="solid" size={24} /> Name
+
 Search person or display names present in leak entries.
 
 #### Example:
@@ -182,12 +188,13 @@ John Doe
 ```
 
 <Note>
-- Names are noisy — combine with other fields (email/username) for precision.
+  - Names are noisy — combine with other fields (email/username) for precision.
 </Note>
 
 ---
 
 ### <Icon icon="link" iconType="solid" size={24} /> Domain
+
 Search domain or host references present in leak entries.
 
 #### Example:
@@ -197,5 +204,5 @@ example.com
 ```
 
 <Note>
-- Use to find leak entries that reference specific domains or hosts.
+  - Use to find leak entries that reference specific domains or hosts.
 </Note>
