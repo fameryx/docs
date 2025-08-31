@@ -1,0 +1,110 @@
+---
+title: 'FiveM — Lookup & DB Search'
+description: 'How to use FiveM lookup and DB search in SearchHub'
+icon: 'gamepad'
+---
+
+# <Icon icon="gamepad" iconType="solid" size={32} /> FiveM — Lookup & DB Search
+
+<Tip title="How to use our Lookup & DB Search?" icon="sparkles">
+Enter a value (license / ID / token) in the lookup to retrieve all related information: accounts (Steam, XBL), Discord, license history and cross-platform matches.
+</Tip>
+
+---
+
+## Search options
+
+## <Icon icon="key" iconType="solid" size={24} /> License
+The license is the primary key — from it we retrieve provider, linked accounts, history and snapshots.
+
+#### Example:
+
+```text
+c0bef349c7f6ad052c6769c4af3a6c40104d056d
+```
+
+<Note>
+- Always start with License when available — it gives the best context (provider, snapshots, history).
+</Note>
+
+---
+
+## <Icon icon="xbox" iconType="solid" size={24} /> XBL (Xbox) ID
+Shows the Xbox account/profile linked to the license. Useful to tie a license to a console profile.
+
+#### Example:
+
+```text
+2535467952730251
+```
+
+<Note>
+- Use to locate Xbox profiles and cross-reference with other IDs.
+</Note>
+
+---
+
+## <Icon icon="steam" iconType="solid" size={24} /> Steam ID
+Returns the Steam ID / username tied to the license — allows access to Steam profiles.
+
+#### Example:
+
+```text
+11000015e09f26b
+```
+
+<Note>
+- Use to trace the player's Steam footprint and public history.
+</Note>
+
+---
+
+## <Icon icon="discord" iconType="solid" size={24} /> Discord ID
+Shows the Discord account associated with the license and preserves history if the user changes license — the linkage remains traceable.
+
+#### Example:
+
+```text
+725358573609287800
+```
+
+<Note>
+- When licenses rotate, Discord history often helps reconnect events and previous tokens.
+</Note>
+
+---
+
+## <Icon icon="user-police" iconType="solid" size={24} /> FiveM ID (Cfx)
+Check if the user changed licenses while keeping the same Cfx client identifier.
+
+#### Example:
+
+```text
+13905447
+```
+
+<Note>
+- Useful to detect license rotations while tracking the same client instance.
+</Note>
+
+---
+
+## <Icon icon="server" iconType="solid" size={24} /> IP address
+You can also search the FiveM DB by IP address.
+
+#### Example:
+
+```text
+203.0.113.45
+```
+
+<Note>
+- IP searches return records where the IP was observed.
+</Note>
+
+---
+
+<Tip title="Pro tips" icon="bulb">
+- Start with the License for the most context.
+- IDs to reduce false positives.    
+</Tip>

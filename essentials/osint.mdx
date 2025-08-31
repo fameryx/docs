@@ -1,0 +1,72 @@
+---
+title: "OSINT Tool — Quick lookup"
+description: "Quick OSINT lookups: username, email, phone, domain, and IP — examples, tips and usage."
+icon: 'magnifying-glass'
+---
+
+## <Icon icon="magnifying-glass" iconType="solid" size={32} /> OSINT Tool — Quick lookup
+
+<Tip title="How to use the OSINT Tool" icon="sparkles">
+Enter one value (username / email / phone / domain / IP) to run a fast lookup. Combine fields for higher precision (example: Username + Domain). Results return linked profiles, public traces, and available metadata.
+</Tip>
+
+---
+
+## <Icon icon="user" iconType="solid" size={24} /> Username
+Search by account handle across indexed sources.
+
+#### Example:
+
+```text
+usernametest
+```
+
+<Note>
+- Username searches are case-insensitive and support partial matches. Combine with domain or email to reduce noise.
+</Note>
+
+---
+
+## <Icon icon="envelope" iconType="solid" size={24} /> Email
+Lookup an email to find associated profiles and public exposures.
+
+#### Example:
+
+```text
+test@gmail.com
+```
+
+<Note>
+- Email lookups return linked accounts, breach hits (where available), and public mentions.
+</Note>
+
+---
+
+## <Icon icon="phone" iconType="solid" size={24} /> Phone number
+Search by phone to find linked profiles and message footprints.
+
+#### Example:
+
+```text
++33061234567
+```
+
+<Note>
+- Normalize numbers (international format) for best results. Use country code + national number.
+</Note>
+
+---
+
+## <Icon icon="link" iconType="solid" size={24} /> Domain / IP
+Lookup domains or IPs to see hosting, links, and observed connections.
+
+#### Example:
+
+```text
+https://searchhub.vip/
+142.251.39.110
+```
+
+<Note>
+- Domain lookups return indexed pages and references. IP lookups return observed connections and sessions (where present).
+</Note>

@@ -1,0 +1,201 @@
+---
+title: "CSINT — Email & Breach Search"
+description: "Search by email, IP, phone, Minecraft UID and Discord ID. Snusbase integration and legal notes."
+icon: "database"
+---
+
+# <Icon icon="database" iconType="solid" size={32} /> CSINT — Email & Breach Search
+
+<Tip title="What this page covers" icon="sparkles">
+Quick examples and notes for searching emails, IPs, phone numbers, Minecraft UIDs and Discord IDs in SearchHub. Includes a short Snusbase overview and legal guidance.
+</Tip>
+
+---
+
+## <Icon icon="envelope" iconType="solid" size={24} /> Email search
+
+Search an email to find linked accounts, public exposures and breach hits.
+
+#### Example:
+
+```text
+test@gmail.com
+```
+
+<Note>
+- Returns linked profiles, indexed mentions and breach dataset hits (when available).  
+- Use full email for best precision; partials may return noisy results.
+</Note>
+
+---
+
+## <Icon icon="server" iconType="solid" size={24} /> IP search
+
+Lookup an IP to surface observed connections, hosting info and related records.
+
+#### Example:
+
+```text
+203.0.113.45
+```
+
+<Note>
+- IP results can include session logs, reports and associated identifiers (when indexed).  
+</Note>
+
+---
+
+## <Icon icon="phone" iconType="solid" size={24} /> Phone number
+
+Search by phone number. Prefer international (normalized) formats for consistency.
+
+#### Example:
+
+```text
+061234567
+```
+
+<Note>
+- Normalize local numbers (country code) for best matches.  
+</Note>
+
+---
+
+## <Icon icon="gamepad" iconType="solid" size={24} /> Minecraft UID
+
+Lookup Minecraft UIDs / UUIDs to find linked activity or associated identifiers.
+
+#### Example:
+
+```text
+550e8400-e29b-41d4-a716-446655440000
+```
+
+<Note>
+- Use the full UUID when possible. Partial matches may return unrelated results.
+</Note>
+
+---
+
+## <Icon icon="discord" iconType="solid" size={24} /> Discord ID
+
+Search by Discord numeric ID.
+
+#### Example:
+
+```text
+1098175931635482634
+```
+
+<Note>
+- Discord IDs are deterministic.
+</Note>
+
+---
+
+# <Icon icon="sparkles" iconType="solid" size={24} /> Snusbase (breach datasets)
+
+Snusbase is a breach/leak aggregator. Use the appropriate type to focus breach searches.
+
+### <Icon icon="envelope" iconType="solid" size={20} /> email
+Search leaked email addresses.
+
+#### Example:
+
+```text
+test@gmail.com
+```
+
+<Note>
+- Returns leaked entries where the email appears.
+</Note>
+
+---
+
+### <Icon icon="user" iconType="solid" size={24} /> Username
+Search account handles / usernames found in leaks.
+
+#### Example:
+
+```text
+te5t_user
+```
+
+<Note>
+- Useful to find usernames reused across breaches.
+</Note>
+
+---
+
+### <Icon icon="server" iconType="solid" size={24} /> IP
+Search last-observed IPs associated with leaked records.
+
+#### Example:
+
+```text
+203.0.113.45
+```
+
+<Note>
+- IP hits show where a record listed an IP address (connections, logs, etc.).
+</Note>
+
+---
+
+### <Icon icon="lock" iconType="solid" size={24} /> Password
+Search plaintext passwords found in leaks (do not store or share).
+
+#### Example:
+
+```text
+T3st123!
+```
+
+<Note>
+- Handle plaintext password hits with strict controls and do not redistribute.
+</Note>
+
+---
+
+### <Icon icon="hash" iconType="solid" size={24} /> Hash
+Search hashed credentials or password hashes.
+
+#### Example:
+
+```text
+5f4dcc3b5aa765d61d8327deb882cf99
+```
+
+<Note>
+- Hash hits may require additional cracking/context to map back to plaintext.
+</Note>
+
+---
+
+### <Icon icon="id-badge" iconType="solid" size={24} /> Name
+Search person or display names present in leak entries.
+
+#### Example:
+
+```text
+John Doe
+```
+
+<Note>
+- Names are noisy — combine with other fields (email/username) for precision.
+</Note>
+
+---
+
+### <Icon icon="link" iconType="solid" size={24} /> Domain
+Search domain or host references present in leak entries.
+
+#### Example:
+
+```text
+example.com
+```
+
+<Note>
+- Use to find leak entries that reference specific domains or hosts.
+</Note>
